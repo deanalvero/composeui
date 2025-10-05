@@ -10,8 +10,11 @@ import ComposeUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Row {
+            Text("Hello,")
+                .padding()
+            CText("world!")
+        }
     }
 }
 
