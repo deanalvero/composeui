@@ -14,6 +14,7 @@
 		71BD8EAE2E88EF640020A53B /* ComposeUIShowcaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD8EAD2E88EF640020A53B /* ComposeUIShowcaseTests.swift */; };
 		71BD8EB82E88EF640020A53B /* ComposeUIShowcaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD8EB72E88EF640020A53B /* ComposeUIShowcaseUITests.swift */; };
 		71BD8EBA2E88EF640020A53B /* ComposeUIShowcaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BD8EB92E88EF640020A53B /* ComposeUIShowcaseUITestsLaunchTests.swift */; };
+		71CCECF12E92F0F800BA2DE9 /* ComposeUI in Frameworks */ = {isa = PBXBuildFile; productRef = 71CCECF02E92F0F800BA2DE9 /* ComposeUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		71BD8EB32E88EF640020A53B /* ComposeUIShowcaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ComposeUIShowcaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BD8EB72E88EF640020A53B /* ComposeUIShowcaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeUIShowcaseUITests.swift; sourceTree = "<group>"; };
 		71BD8EB92E88EF640020A53B /* ComposeUIShowcaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeUIShowcaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		71CCECEE2E92F0B900BA2DE9 /* composeui */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = composeui; path = ../..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71CCECF12E92F0F800BA2DE9 /* ComposeUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,10 +77,12 @@
 		71BD8E902E88EF620020A53B = {
 			isa = PBXGroup;
 			children = (
+				71CCECEE2E92F0B900BA2DE9 /* composeui */,
 				71BD8E9B2E88EF620020A53B /* ComposeUIShowcase */,
 				71BD8EAC2E88EF640020A53B /* ComposeUIShowcaseTests */,
 				71BD8EB62E88EF640020A53B /* ComposeUIShowcaseUITests */,
 				71BD8E9A2E88EF620020A53B /* Products */,
+				71CCECEF2E92F0F800BA2DE9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +132,13 @@
 			path = ComposeUIShowcaseUITests;
 			sourceTree = "<group>";
 		};
+		71CCECEF2E92F0F800BA2DE9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +155,9 @@
 			dependencies = (
 			);
 			name = ComposeUIShowcase;
+			packageProductDependencies = (
+				71CCECF02E92F0F800BA2DE9 /* ComposeUI */,
+			);
 			productName = ComposeUIShowcase;
 			productReference = 71BD8E992E88EF620020A53B /* ComposeUIShowcase.app */;
 			productType = "com.apple.product-type.application";
@@ -583,6 +598,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		71CCECF02E92F0F800BA2DE9 /* ComposeUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ComposeUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 71BD8E912E88EF620020A53B /* Project object */;
 }
